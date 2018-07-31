@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Campus Verde</title>
+
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-119394998-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+    <!-- Custom styles for this template -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/blog/site.css" rel="stylesheet">
+    <link href="~/Content/blog/blog.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row col-sm-4 nopadding div-pesquisar">
+                <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Buscar...">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text click-pesquisar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-12 text-center" style="background-color:#a3e7af">
+                    <img src="~/Content/imagem/logo.png" class="logo" />
+                </div>
+            </div>
+        </header>
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="~/Home/Index" onclick="ga('send', 'event', 'Notícia', 'Menu Principal');">Notícias</a>
+                <a class="p-2 text-muted" href="#">Reportagens</a>
+                <a class="p-2 text-muted" href="#">Colunas</a>
+                <a class="p-2 text-muted" href="#">Blogs</a>
+                <a class="p-2 text-muted" href="#">Especiais</a>
+                <a class="p-2 text-muted" href="#">Fotografia</a>
+                <a class="p-2 text-muted" href="#">Agenda</a>
+            </nav>
+        </div>
+    </div>
+
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+
+    <footer class="blog-footer">
+        <small>Copyright © </small> <p>Gabriela</p>
+    </footer>
+
+    <script src="~/Scripts/jquery-3.3.1.slim.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="~/Scripts/blog/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/blog/holder.min.js"></script>
+    <script>
+        Holder.addTheme('thumb', {
+            bg: '#55595c',
+            fg: '#eceeef',
+            text: 'Thumbnail'
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<div class="form-group">
+    <a href="../PegadaEcologica/Index">
+        <img src="~/Content/imagem/capa 2.png" class="imagem-destaque" />
+    </a>
+</div>
+
+<div class="row mb-2">
+
+    <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Categoria</strong>
+                <h5 class="mb-0">
+                    @Html.ActionLink("Inseticida botânico pode ser a solução para algumas lavouras", "Index", "Noticia", new { idNoticia = 1 }, new { @style = "color:black;" })
+                </h5>
+                <div class="mb-1 text-muted"></div>
+                <p class="card-text mb-auto">Estudo científico inédito da Unoeste usa extrato etanólico de erva daninha para controlar principal praga do milho.</p>
+                @Html.ActionLink("Continuar Leitura", "Index", "Noticia", new { idNoticia = 1 }, null)
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block img-card-noticia" alt="" src="~/Content/noticia/inseticida_botanico.jpg">
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Categoria</strong>
+                <h5 class="mb-0">
+                    @Html.ActionLink("Mestrado em Meio Ambiente abre seleção para pós-doutorado", "Index", "Noticia", new { idNoticia = 2 }, new { @style = "color:black;" })
+                </h5>
+                <div class="mb-1 text-muted"></div>
+                <p class="card-text mb-auto">Estão sendo ofertadas duas vagas sem bolsa e uma vaga com bolsa para pesquisador brasileiro ou estrangeiro</p>
+                @Html.ActionLink("Continuar Leitura", "Index", "Noticia", new { idNoticia = 2 }, null)
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block img-card-noticia" alt="" src="~/Content/noticia/mestrado-meio-ambiente.jpg">
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Categoria</strong>
+                <h5 class="mb-0">
+                    @Html.ActionLink("Mestrado em Meio Ambiente recebe estudante de Moçambique", "Index", "Noticia", new { idNoticia = 3 }, new { @style = "color:black;" })
+                </h5>
+                <div class="mb-1 text-muted"></div>
+                <p class="card-text mb-auto">Interesse pela pós-graduação da Unoeste surgiu a partir de site com ranking das melhores universidades do Brasil</p>
+                @Html.ActionLink("Continuar Leitura", "Index", "Noticia", new { idNoticia = 3 }, null)
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block img-card-noticia" alt="" src="~/Content/noticia/mocambique.jpg">
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-primary">Categoria</strong>
+                <h5 class="mb-0">
+                    @Html.ActionLink("Semana do Meio Ambiente tem atividades em quatro cidades", "Index", "Noticia", new { idNoticia = 4 }, new { @style = "color:black;" })
+                </h5>
+                <div class="mb-1 text-muted"></div>
+                <p class="card-text mb-auto">Marcos comemorativos estimulam intensificação de ações pelo dia mundial voltado à proteção e preservação</p>
+                @Html.ActionLink("Continuar Leitura", "Index", "Noticia", new { idNoticia = 4 }, null)
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block img-card-noticia" alt="" src="~/Content/noticia/semana-meio-ambiente.jpg">
+        </div>
+    </div>
+</div>
